@@ -25,7 +25,7 @@ void setup() {
   
   myCar.begin(8,9,10,11);  // LF, LB, RF, RB
 
-  myCar.stop()            // Stop all motors 
+  myCar.stop();            // Stop all motors 
   myCar.goForward(1000);  // Move Forward for 1 second
   myCar.turnRight(100);   // Turn Right 
   myCar.goForward(500);   // Move Forward for 0,5 second
