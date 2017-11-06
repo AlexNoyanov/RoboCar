@@ -65,3 +65,12 @@ void RoboCar::turnRight(int  delayTime){
     Off(LF);
 }
 
+
+//  Functions for rotate on angle
+void RotateLeft(int angle){
+
+}
+void RotateRight(int angle){
+    
+}
+
