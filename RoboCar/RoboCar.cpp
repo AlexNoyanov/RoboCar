@@ -67,8 +67,18 @@ void RoboCar::turnRight(int  delayTime){
 
 
 //  Functions for rotate on angle
+
+//  w = 2*pi/t
+//  v = 2*pi*R/t
+//  v = w*R;
+//  rad = w*t
+//  rad = 2*pi*R*t
+//
+//  angle = (rad*180)/pi;
+
 void RotateLeft(int angle){
 
+    
 }
 void RotateRight(int angle){
     

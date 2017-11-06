@@ -31,6 +31,7 @@ public:                         // Public functions
     
     void RotateLeft(int angle);     // Rotate Left
     void RotateRight(int angle);    // Rotate Right
+    
 };
 
 
