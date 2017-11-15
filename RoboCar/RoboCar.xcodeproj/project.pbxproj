@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D9DFE58A1FA87AA9002883A5 /* RoboCar.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D9DFE5881FA87AA9002883A5 /* RoboCar.hpp */; };
+		A4DF8FF11FBCD5AF00CD670C /* RoboCar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4DF8FEF1FBCD5AF00CD670C /* RoboCar.cpp */; };
+		A4DF8FF21FBCD5AF00CD670C /* RoboCar.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A4DF8FF01FBCD5AF00CD670C /* RoboCar.hpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A4DF8FEF1FBCD5AF00CD670C /* RoboCar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RoboCar.cpp; sourceTree = "<group>"; };
+		A4DF8FF01FBCD5AF00CD670C /* RoboCar.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RoboCar.hpp; sourceTree = "<group>"; };
 		D9DFE5801FA87A8F002883A5 /* libRoboCar.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libRoboCar.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		D9DFE5871FA87AA9002883A5 /* RoboCar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RoboCar.cpp; sourceTree = "<group>"; };
-		D9DFE5881FA87AA9002883A5 /* RoboCar.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RoboCar.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,8 +31,8 @@
 		D9DFE5771FA87A8F002883A5 = {
 			isa = PBXGroup;
 			children = (
-				D9DFE5871FA87AA9002883A5 /* RoboCar.cpp */,
-				D9DFE5881FA87AA9002883A5 /* RoboCar.hpp */,
+				A4DF8FEF1FBCD5AF00CD670C /* RoboCar.cpp */,
+				A4DF8FF01FBCD5AF00CD670C /* RoboCar.hpp */,
 				D9DFE5811FA87A8F002883A5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,7 +52,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9DFE58A1FA87AA9002883A5 /* RoboCar.hpp in Headers */,
+				A4DF8FF21FBCD5AF00CD670C /* RoboCar.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +114,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4DF8FF11FBCD5AF00CD670C /* RoboCar.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +251,7 @@
 				D9DFE5861FA87A8F002883A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
