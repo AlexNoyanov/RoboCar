@@ -60,3 +60,28 @@ void RoboCar::turnRight(delayTime){
     Off(LF);
 }
 
+
+//  Functions for rotate on angle
+
+//  w = 2*pi/t
+//  v = 2*pi*R/t
+//  v = w*R;
+//  rad = w*t
+//  rad = 2*pi*R*t
+//
+//  angle = (rad*180)/pi;
+
+//  rad = (angle*pi)/180
+//  t = rad/(2*pi*R)
+//  t = (angle*pi)/(2*180*pi*R)
+
+//  t = angle/ (360*R)
+
+void RotateLeft(int angle){
+    
+    
+}
+void RotateRight(int angle){
+    
+}
+
