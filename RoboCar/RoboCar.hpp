@@ -31,3 +31,5 @@ public:  // Public functions
 };
 
 // just a comment
+
+//  Changed in master branch
