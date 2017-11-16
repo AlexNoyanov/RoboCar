@@ -8,6 +8,8 @@
 
 #include "RoboCar.hpp"
 
+double r = 0,05;
+
 // Turn ON motor:
 void On(int pin){
     digitalWrite(pin,HIGH);
@@ -78,8 +80,11 @@ void RoboCar::turnRight(delayTime){
 //  t = angle/ (360*R)
 
 void RotateLeft(int angle){
-  
     // Changes from branch AlexMacBookPro
+    
+    double dTime = angle/(360*r);   // Motor working time in seconds
+    
+    int tme = dTime * 1000;         // Motor working time in miliseconds
     
 }
 void RotateRight(int angle){
