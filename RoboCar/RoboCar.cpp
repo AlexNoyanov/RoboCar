@@ -79,7 +79,7 @@ void RoboCar::turnRight(delayTime){
 
 //  t = angle/ (360*R)
 
-void RotateLeft(int angle){
+void RoboCar::RotateLeft(int angle){
     // Changes from branch AlexMacBookPro
     
     double dTime = angle/(360*r);   // Motor working time in seconds
@@ -89,7 +89,7 @@ void RotateLeft(int angle){
     turnLeft(tme);                  // And now turn left with this time delay
     
 }
-void RotateRight(int angle){
+void RoboCar::RotateRight(int angle){
     
 }
 
