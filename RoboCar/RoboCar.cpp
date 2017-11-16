@@ -98,9 +98,8 @@ void RoboCar::RotateRight(int angle){
     
 }
 
-void RoboCar::RotateCenter(int angle)
-{
-    
-}
+//void RoboCar::RotateCenter(int angle) // Don't know what this useing for
+//{
+//}
 
 
