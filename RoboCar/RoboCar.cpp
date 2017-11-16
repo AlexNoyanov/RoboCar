@@ -98,6 +98,32 @@ void RoboCar::RotateRight(int angle){
     
 }
 
+// This function must make braking process nice and smooth:
+void RoboCar::Brake(int tme, bool func){
+    
+    //  Func -  last function
+    // If func = TRUE, then forward
+    // If func = FALSE then back
+    
+    int step = 10;  // Braking step
+    
+    if(bool = TRUE){
+        for(int i = 0; i < tme; i = i+step ){
+            stop();
+            delay(i);
+            goForward(i);
+            delay(i);
+        }
+    } else{
+        for(int i = 0; i < tme; i = i+step ){
+            stop();
+            delay(i);
+            goBack(i);
+            delay(i);
+        }
+    }
+}
+
 //void RoboCar::RotateCenter(int angle) // Don't know what this useing for
 //{
 //}
