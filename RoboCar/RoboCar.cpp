@@ -90,6 +90,11 @@ void RoboCar::RotateLeft(int angle){
     
 }
 void RoboCar::RotateRight(int angle){
+    double dTime = angle/(360*r);   // Motor working time in seconds
+    
+    int tme = dTime * 1000;         // Motor working time in miliseconds
+    
+    turnLeft(tme);                  // And now turn left with this time delay
     
 }
 //  Changed in branch ALexMacBookPro
