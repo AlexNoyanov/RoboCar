@@ -96,3 +96,9 @@ void RoboCar::RotateRight(int angle){
 
 // more from macbookpro
 
+// this is from MacBookAir
+void RoboCar::RotateCenter(int angle)
+{
+    
+}
+
