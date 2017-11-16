@@ -25,7 +25,7 @@ public:  // Public functions
     void fastturnLeft(int delayTime);  // Turn Left fast   (L-F R-B)
     void fastturnRight(int delayTime); // Turn Right fast  (L-B R-F)
     
-    void stop();                    // Stop all motors
+    void stop();                       // Stop all motors
 };
 
 // just a comment
