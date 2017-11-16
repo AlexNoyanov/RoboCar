@@ -97,16 +97,10 @@ void RoboCar::RotateRight(int angle){
     turnLeft(tme);                  // And now turn left with this time delay
     
 }
-//  Changed in branch ALexMacBookPro
-
-// more from macbookpro
-
-// this is from MacBookAir
-
-//  Coment in branch AlexMacBookPro
 
 void RoboCar::RotateCenter(int angle)
 {
     
 }
+
 
