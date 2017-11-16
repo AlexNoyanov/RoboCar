@@ -10,12 +10,12 @@
 
 // Turn ON motor:
 void On(int pin){
-    digitalWrite(pin,HIGH);
+    digitalWrite(pin,LOW);
 }
 
 // Turn OFF motor:
 void Off(int pin){
-    digitalWrite(pin,LOW);
+    digitalWrite(pin,HIGH);
 }
 
 void RoboCar::begin(LF,LB,RF,RB){
