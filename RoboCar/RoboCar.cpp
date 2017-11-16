@@ -72,7 +72,7 @@ void RoboCar::testAll(int a){
     Serial.println(" Right motor Forward");
     turnLeft(1000);                         // Turn on Right motor on a second
     
-    Serial.println("Library version: 2.2");
+    Serial.println("Library version: 2.2"); // Library version  
     
     
 }
