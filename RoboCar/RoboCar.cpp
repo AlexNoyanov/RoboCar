@@ -122,8 +122,13 @@ void RoboCar::Brake(int tme, bool func){
             delay(i);
         }
     }
+    
+    
 }
 
+void roboCar::goForwardWithSpeed(int speed){
+    
+}
 //void RoboCar::RotateCenter(int angle) // Don't know what this useing for
 //{
 //}
