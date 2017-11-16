@@ -8,6 +8,8 @@
 
 #include "RoboCar.hpp"
 
+double r = 0,05;
+
 // Turn ON motor:
 void On(int pin){
     digitalWrite(pin,HIGH);
@@ -61,19 +63,33 @@ void RoboCar::turnRight(delayTime){
 }
 
 
-// For testing all motors:
-void RoboCar::testAll(int a){
-    Serial.begin(9600);
-    Serial.println("    === Test Mode activated!  ===");
+//  Functions for rotate on angle
+
+//  w = 2*pi/t
+//  v = 2*pi*R/t
+//  v = w*R;
+//  rad = w*t
+//  rad = 2*pi*R*t
+//
+//  angle = (rad*180)/pi;
+
+//  rad = (angle*pi)/180
+//  t = rad/(2*pi*R)
+//  t = (angle*pi)/(2*180*pi*R)
+
+//  t = angle/ (360*R)
+
+void RoboCar::RotateLeft(int angle){
+    // Changes from branch AlexMacBookPro
     
-    Serial.println(" Left motor Forward");
-    turnRight(1000);                        // Turn on Left motor on a second
+    double dTime = angle/(360*r);   // Motor working time in seconds
     
-    Serial.println(" Right motor Forward");
-    turnLeft(1000);                         // Turn on Right motor on a second
+    int tme = dTime * 1000;         // Motor working time in miliseconds
     
+    turnLeft(tme);                  // And now turn left with this time delay
     
 }
-//  Changes from master branch
+void RoboCar::RotateRight(int angle){
+    
+}
 
-// New changes in master branch!
