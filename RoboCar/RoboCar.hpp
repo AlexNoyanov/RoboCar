@@ -15,8 +15,8 @@
 
 class RoboCar       // Class RoboCar
 {
-public:                         // Public functions
-    void begin(int LF, int LB, int RF,int RB);                   // Starting
+public:  // Public functions
+    void begin(int LF, int LB, int RF,int RB);  // Starting
     void goForward(int delayTime);  // Moving forward   (L-F R-F)
     void goBack(int delayTime);     // Moving back      (L-B R-B)
     void turnLeft(int delayTime);   // Turn Left        (L-F R-S)
@@ -25,5 +25,9 @@ public:                         // Public functions
     void fastturnLeft(int delayTime);  // Turn Left fast   (L-F R-B)
     void fastturnRight(int delayTime); // Turn Right fast  (L-B R-F)
     
-    void stop();                    // Stop all motors
+    void stop();                       // Stop all motors
+    
+    void testAll(int a);                    // Test all motors
 };
+
+// just a comment

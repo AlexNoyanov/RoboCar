@@ -3,15 +3,10 @@
 //  RoboCar
 //
 //  Created by Alex Noyanov on 31.10.17.
-//  Copyright © 2017 Alex Noyanov. All rights reserved.
+//  Copyright © 2017 Popoff Developer Studio. All rights reserved.
 //
 
-#include "RoboCar.h"
-
-int LF;
-int LB;
-int RF;
-int RB;
+#include "RoboCar.hpp"
 
 // Turn ON motor:
 void On(int pin){
@@ -23,7 +18,7 @@ void Off(int pin){
     digitalWrite(pin,LOW);
 }
 
-void RoboCar::begin(int LF,int LB,int RF,int RB){
+void RoboCar::begin(LF,LB,RF,RB){
     pinMode(LB,OUTPUT);
     pinMode(LF,OUTPUT);
     pinMode(RF,OUTPUT);
@@ -37,7 +32,7 @@ void RoboCar::stop(){
     Off(RB);
 }
 
-void RoboCar::goForward(int delayTime){
+void RoboCar::goForward(delayTime){
     On(LF);
     On(RF);
     delay(delayTime);
@@ -45,7 +40,7 @@ void RoboCar::goForward(int delayTime){
     Off(RF);
 }
 
-void RoboCar::goBack(int delayTime){
+void RoboCar::goBack(delayTime){
     On(LB);
     On(RB);
     delay(delayTime);
@@ -53,34 +48,32 @@ void RoboCar::goBack(int delayTime){
     Off(RB);
 }
 
-void RoboCar::turnLeft(int delayTime){
+void RoboCar::turnLeft(delayTime){
     On(RF);
     delay(delayTime);
     Off(RF);
 }
 
-void RoboCar::turnRight(int  delayTime){
+void RoboCar::turnRight(delayTime){
     On(LF);
     delay(delayTime);
     Off(LF);
 }
 
 
-//  Functions for rotate on angle
-
-//  w = 2*pi/t
-//  v = 2*pi*R/t
-//  v = w*R;
-//  rad = w*t
-//  rad = 2*pi*R*t
-//
-//  angle = (rad*180)/pi;
-
-void RotateLeft(int angle){
-
+// For testing all motors:
+void RoboCar::testAll(int a){
+    Serial.begin(9600);
+    Serial.println("    === Test Mode activated!  ===");
+    
+    Serial.println(" Left motor Forward");
+    turnRight(1000);                        // Turn on Left motor on a second
+    
+    Serial.println(" Right motor Forward");
+    turnLeft(1000);                         // Turn on Right motor on a second
+    
     
 }
-void RotateRight(int angle){
-    
-}
+//  Changes from master branch
 
+// New changes in master branch!
