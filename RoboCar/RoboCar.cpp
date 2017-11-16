@@ -86,6 +86,8 @@ void RotateLeft(int angle){
     
     int tme = dTime * 1000;         // Motor working time in miliseconds
     
+    turnLeft(tme);                  // And now turn left with this time delay
+    
 }
 void RotateRight(int angle){
     
