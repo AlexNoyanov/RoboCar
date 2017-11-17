@@ -128,6 +128,15 @@ void RoboCar::Brake(int tme, bool func){
 
 void roboCar::goForwardWithSpeed(int speed){
     
+    int maxDelay = 100;
+    int TimeStep = 10;
+    for(int i = maxDelay; i > 0; i = i-TimeStep ){
+        goForward(i);
+        
+        
+    }
+    
+    
 }
 //void RoboCar::RotateCenter(int angle) // Don't know what this useing for
 //{
