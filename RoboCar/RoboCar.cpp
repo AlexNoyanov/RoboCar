@@ -67,10 +67,22 @@ void RoboCar::testAll(int a){
     Serial.println("    === Test Mode activated!  ===");
     
     Serial.println(" Left motor Forward");
-    turnRight(1000);                        // Turn on Left motor on a second
+    turnRight(1000);                                // Turn on Left motor on a second
     
     Serial.println(" Right motor Forward");
-    turnLeft(1000);                         // Turn on Right motor on a second
+    On(RF);                                         // Turn on Right motor on a second
+    delay(1000);
+    Off(RF);
+    
+    Serial.println(" Left motor Back");
+    On(LB);                                         // Turn on Left motor on a second
+    delay(1000);
+    Off(LB);
+    
+    Serial.println(" Right motor Back");
+    On(RB);                                        // Turn on Right motor on a second
+    delay(1000);
+    Off(RB);
     
     Serial.println("Library version: 2.2"); // Library version  
     
@@ -78,6 +90,6 @@ void RoboCar::testAll(int a){
 }
 //  Changes from master branch
 
-// New changes in master branch!
+//  New changes in master branch!
 
 //  Comment from master 
