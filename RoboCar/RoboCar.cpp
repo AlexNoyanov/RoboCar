@@ -60,6 +60,14 @@ void RoboCar::turnRight(delayTime){
     Off(LF);
 }
 
+void RoboCar::RightFast(){
+    
+}
+
+
+void RoboCar::LeftFast(){
+    
+}
 
 // For testing all motors:
 void RoboCar::testAll(int a){
