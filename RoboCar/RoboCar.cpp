@@ -5,6 +5,7 @@
 //  Created by Alex Noyanov on 31.10.17.
 //  Copyright © 2017 Popoff Developer Studio. All rights reserved.
 //
+//  This library is under MIT license protected
 
 #include "RoboCar.hpp"
 
@@ -138,6 +139,9 @@ void roboCar::goForwardWithSpeed(int speed){
     
     
 }
+
+
+
 //void RoboCar::RotateCenter(int angle) // Don't know what this useing for
 //{
 //}
