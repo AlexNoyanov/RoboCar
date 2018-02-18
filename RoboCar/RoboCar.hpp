@@ -27,7 +27,7 @@ public:  // Public functions
     
     void stop();                       // Stop all motors
     
-    void testAll(int a);                    // Test all motors
+    void testAll(int a);               // Test all motors
     
     void RightFast();
     void LeftFast();
